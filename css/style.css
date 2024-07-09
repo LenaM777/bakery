@@ -121,6 +121,13 @@ ul {
     background-color: transparent;
 }
 
+/* .button:disabled {
+    color: gray;
+    background-color: lightgrey;
+    border-color: currentColor;
+    cursor: not-allowed;
+} */
+
 /* Link */
 .link {
     color: var(--color-primary-light);
@@ -583,3 +590,5 @@ ul {
     color: var(--color-primary-dark);
     text-underline-offset: 2px;
 }
+
+ 
