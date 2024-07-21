@@ -6,10 +6,12 @@
 @import './utils/mixins';
 
 @import './components/buttons';
+@import './components/carousel-button';
 @import './components/chef-card';
 @import './components/format-card';
 @import './components/input';
 @import './components/links';
+@import './components/_pagination';
 
 
 
@@ -17,7 +19,7 @@
 @import './layouts/advantages-section';
 @import './layouts/chefs-section';
 @import './layouts/contact-section';
-
+@import './layouts/footer';
 
 @import './layouts/form-terms';
 @import './layouts/formats-section';
@@ -56,109 +58,10 @@
     cursor: not-allowed;
 } */
 
-/* Carousel */
-.carousel-button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
-    width: 44px;
-    height: 44px;
-    padding: 0;
-    fill: var(--color-primary-dark);
-    background-color: transparent;
-    border-radius: 50%;
-    border: 1px solid var(--color-primary-dark);
-    cursor: pointer;
-}
-
-.carousel-button:hover {
-    background-color: var(--color-primary-dark);
-    fill: var(--color-primary-light);
-}
-
-.carousel-button.next {
-    transform: rotate(180deg);
-}
 
 
 
 
 
-/* Footer */
-.footer {
-    padding: 32px 0;
-    position: relative;
-    background-image: url(../images/footer-background.png);
-    background-color: var(--color-primary-dark);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
 
-.footer::before,
-.footer::after {
-    position: absolute;
-    bottom: 0;
-    background-repeat: no-repeat;
-    content: '';
-}
-
-
-.footer::before {
-    left: 0;
-    width: 180px;
-    height: 120px;
-    background-image: url(../images/decor-bread-small.png);
-}
-
-.footer::after {
-    right: 0;
-    width: 380px;
-    height: 190px;
-    background-image: url(../images/decor-bread-large.png);
-}
-
-.footer-container {
-    display: flex;
-    gap: 20px;
-}
-
-.footer-nav,
-.footer-address {
-    display: flex;
-    flex-basis: 50%;
-    gap: 20px;
-}
-
-.footer-logo,
-.footer-menu {
-    flex-grow: 1;
-}
-
-.address-list,
-.address-info {
-    flex-grow: 1;
-}
-
-
-
-.address-link {
-    color: var(--color-primary-light);
-    font-size: 16px;
-    font-weight: 300;
-    text-decoration: none;
-}
-
-.address-link:hover {
-    color: var(--color-brand-normal);
-}
-
-.address-icon {
-    fill: var(--color-primary-light);
-}
-
-.address-copyright {
-    font-size: 14px;
-}
 
